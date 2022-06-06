@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Nanovis Group</title>
+		<title>Supplementary Webpage</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -17,24 +17,14 @@
 
 			<!-- Header -->
 				<header id="header" class="alt">
-					<h1 id="logo"><a href="index.html">Nanovis</a> - <a href="https://nanovis.kaust.edu.sa/"><span>KAUST Nanovisualization Research Group</span></a></h1>
-					<nav id="nav">
-						<ul>
-							<li>
-								<a href="index.html">Publications</a>
-							</li>
-							<li>
-								<a href="resources.html">Resources</a>
-							</li>
-						</ul>
-					</nav>
+					<h1 id="logo"><a href="index.html">Supplementary Webpage</a> - <span>GPU Accelerated 3D Tomographic Reconstruction and Visualization from Noisy Electron Microscopy Tilt-Series</span></h1>					
 				</header>
 
 			<!-- Main -->
 				<article id="main">
 
 					<header class="special container">
-						<h2><strong>Paper Title</strong></h2>
+						<h2><strong>GPU Accelerated 3D Tomographic Reconstruction and Visualization from Noisy Electron Microscopy Tilt-Series</strong></h2>
 					</header>
 
 					<!-- Content -->
@@ -42,20 +32,20 @@
 							<div class="row gtr-50">
 								<div class="col-4 col-12-narrower">
 									<div class="image fit">
-										<img src="./images/teaser-image.png" />
-										<p class="fig-text">Some image descripton (optional)</p>
+										<img src="./images/tilt-series.gif" />
+										<p class="fig-text">Tilt-series</p>
 									</div>
 								</div>
 								<div class="col-4 col-12-narrower">
 									<div class="image fit">
-										<img src="./images/teaser-image.png" />
-										<p class="fig-text">Some image descripton (optional)</p>
+										<img src="./images/reconstruction.gif" />
+										<p class="fig-text">Reconstruction slices</p>
 									</div>
 								</div>
 								<div class="col-4 col-12-narrower">
 									<div class="image fit">
-										<img src="./images/teaser-image.png" />
-										<p class="fig-text">Some image descripton (optional)</p>
+										<img src="./images/3D_vis.gif" />
+										<p class="fig-text">3D visualization</p>
 									</div>
 								</div>
 							</div>
@@ -63,15 +53,39 @@
 								<div class="col-12 col-12-narrower">
 									<header>
 										<h2>Authors</h2>
+											<a href="https://vccvisualization.org/people/reyramirez/">Julio Rey Ramirez</a>,
+											<a href="https://vccvisualization.org/people/rautek/">Peter Rautek</a>,
+											<a href="https://cemse.kaust.edu.sa/nanovis/people/person/ciril-bohak-0">Ciril Bohak</a>,											
+											<a href="https://cemse.kaust.edu.sa/nanovis/people/person/ondrej-strnad">Ondrej Strnad</a>,
+											<a href="http://www.lisailab.com/personal_zheyuanzhang.html">Zheyuan Zhang</a>,
+											<a href="http://www.lisailab.com/lisai.html">Sai Li</a>,																		
 											<a href="https://cemse.kaust.edu.sa/nanovis/people/person/ivan-viola">Ivan Viola</a>, 
-											<a href="URL-TO-PERSONAL-WEBSITE">Someone Else</a>
+											<a href="https://vccimaging.org/People/heidriw/">Wolfgang Heidrich</a>
 									</header>
 
 									<h2>Description</h2>
-									<p>Short paper description (Abstract)
+									<p>We present a novel framework for 3D tomographic reconstruction and visualization of tomograms from noisy electron microscopy tilt-series.
+									Our technique takes as an input aligned tilt-series from cryogenic electron microscopy and creates denoised 3D tomograms using a proximal
+									jointly-optimized approach that iteratively performs reconstruction and denoising, relieving the users of the need to select appropriate
+									denoising algorithms in the pre-reconstruction or post-reconstruction steps. The whole process is accelerated by exploiting parallelism
+									on modern GPUs, and the results can be visualized immediately after the reconstruction using volume rendering tools incorporated in the
+									framework. We show that our technique can be used with multiple combinations of reconstruction algorithms and regularizers, thanks to the
+									flexibility provided by proximal algorithms. Additionally, the reconstruction framework is open-source and can be easily extended with additional
+									reconstruction and denoising methods. Furthermore, our approach enables visualization of reconstruction error throughout the iterative process within
+									the reconstructed tomogram and on projection planes of the input tilt-series. We evaluate our approach in comparison with state-of-the-art approaches
+									and additionally show how our error visualization can be used for reconstruction evaluation.
+									</p>
+									
+									<h2>Sources</h2>
+									<ul>
+										<li><a href="download/supplementary_video.mp4">Supplementary video - Proximal Cryo-ET framework</a></li>
+										<li><a href="download/supplementary.pdf">PDF - Supplementary document</a></li>
+									</ul>
+									<p>
+
 									</p>
 
-									<footer>
+									<!--<footer>
 										<h2>Publications</h2>
 										<p>
 											Authors' Names. 
@@ -79,6 +93,7 @@
 											<em>Journal Name, [Year], [BiBTeX]</em>
 										</p>
 									</footer>
+									-->
 
 								</div>
 							</div>
@@ -88,17 +103,13 @@
 
 			<!-- Footer -->
 				<footer id="footer">
-
-					<ul class="icons">
-						<li><a href="https://github.com/nanovis" class="icon brands circle fa-github"><span class="label">Github</span></a></li>
-						<li><a href="https://twitter.com/nanovis_group" class="icon brands circle fa-twitter"><span class="label">Twitter</span></a></li>
-					</ul>
-
+					
 					<ul class="copyright">
-						<li>&copy; Nanovis</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Julio Rey</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 
 				</footer>
+				
 
 		</div>
 
