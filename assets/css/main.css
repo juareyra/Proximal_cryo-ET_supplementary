@@ -3367,3 +3367,9 @@ code {
 .resources-table td {
 	vertical-align: middle;
 }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
